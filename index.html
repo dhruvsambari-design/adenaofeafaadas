@@ -22,7 +22,7 @@
 <body>
 
   <!-- Music (starts on first click) -->
-  <audio id="bgMusic" src="music/tummile-cut.mp3" loop></audio>
+  <audio id="bgMusic" src="music/tum-mile-cut.mp3" loop></audio>
 
   <!-- Start Screen -->
   <div id="startScreen">
@@ -69,7 +69,7 @@
 
     // Start slideshow and music
     function startSlideshow() {
-        // Play music (works on Chrome)
+        // Play music (Chrome-friendly)
         bgMusic.play().catch(e => console.log("Music blocked until user interacts"));
 
         // Hide start screen
